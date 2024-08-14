@@ -1,0 +1,2 @@
+#!/bin/bash
+if d=$(zenity --question --title="Bye" --text="N - exit, Y - bye"); then if d=$(zenity --question --title="Bye" --text="N - poweroff, Y - suspend"); then systemctl suspend; else systemctl poweroff; fi else echo ""; fi
